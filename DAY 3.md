@@ -6,13 +6,13 @@ This session gave a small de-briefing about data science as a domain. Starting w
    - Beginning of AI development go backs to WW2 period. 
    - Allen Turing developed the first machine called "Enigma" having the intelligence to automatically decode enemy messages.
    - Frank Rosenblatt invented Perceptron (1st machine learning algorithm and machine to learn from experience) which tried to mimic human neural network.
-  - Geoffrey Hinton and his belief in making intelligent systems a reality made him work on AI even during the period of AI dawn. Which eventually had a huge impact on the AI developments happening in this decade.
+   - Geoffrey Hinton and his belief in making intelligent systems a reality made him work on AI even during the period of AI dawn. Which eventually had a huge impact on the AI developments happening in this decade.
    
 ![image](https://github.com/user-attachments/assets/3ed20e58-7db7-45af-b38c-8de7ab816eba)
 
 ## Introduction to Machine Learning [ML ](https://www.geeksforgeeks.org/supervised-unsupervised-learning/)
 
-- Machine Learning is basically a subdomain of AI where in we train the machine to learn things using different algorithmic techniques. 
+ - Machine Learning is basically a subdomain of AI where in we train the machine to learn things using different algorithmic techniques. 
  - It can be classified into supervised and unsupervised learning.
  
  **Supervised learning**
@@ -22,7 +22,7 @@ This session gave a small de-briefing about data science as a domain. Starting w
  - Machine learns with human guidance.
  - It is done by using labelled data
  - Includes techniques like regression and classification.
- - ***Classification***: Simple example can be a movie or food recommendation system system based on preferences done by training the model with the historical data of customers.
+ - ***Classification***: Simple example can be a movie or food recommendation system based on preferences done by training the model with the historical data of customers.
  - ***Regression*** : It is more advanced than classification in which the output can have a range (or continuous) values. For example weather prediction with accuracy like " chance of 60 mm rain on Tuesday". But in classification it can only predict  the weather in a discrete way like " Tuesday is rainy or not rainy".
  
  **Unsupervised learning** 
@@ -32,11 +32,13 @@ This session gave a small de-briefing about data science as a domain. Starting w
  - Machine learns without human guidance.
  - No labels will be used in training data
  - Includes techniques like clustering and association.
+ - ***Clustering***: Used to identify data points that are homogenous and forms a cluster from a collection of hetrogenous dataset. For example it can be used in anomaly detection or market segment analysis.
+ - ***Association***: Used to find interesting associations and relationships among large sets of data items.
    
 ## Introduction to Python
  - Python is a high-level , interpreted ( data type is interpreted line by line , not declared beforehand as in C and  C++) , object oriented programming language.
  
- **Python libraries**0
+ **Python libraries**
  
  ![image](https://github.com/user-attachments/assets/dad4a54f-e802-413c-be57-130f2a206a7c)
 
