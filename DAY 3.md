@@ -36,7 +36,7 @@ This session gave a small de-briefing about data science as a domain. Starting w
 ## Introduction to Python
  - Python is a high-level , interpreted ( data type is interpreted line by line , not declared beforehand as in C and  C++) , object oriented programming language.
  
- **Python libraries**
+ **Python libraries**0
  
  ![image](https://github.com/user-attachments/assets/dad4a54f-e802-413c-be57-130f2a206a7c)
 
