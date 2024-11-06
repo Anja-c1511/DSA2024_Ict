@@ -27,7 +27,7 @@ This session gave a detailed theoretical and hands on experience in the project 
    
    ![](https://www.altexsoft.com/media/2018/06/1.png)
 
-   ## Terminologies related to SDLC
+   ## Terminologies related to Scrum Framework
 
  -  ***Product owner :*** This person acts as a bridge between the development team and stakeholders, managing the *Product Backlog** and prioritizing features based on business goals and customer needs.
  -  ***Scrum Team :***  Consists of developers, QA engineers, and other roles needed to build and deliver the product.
