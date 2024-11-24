@@ -1,7 +1,7 @@
 ## Database Management System (DBMS)
 - A Database Management System (DBMS) is a software system that allows users to create, store, organize, and access data in a database. It can be divided into Relational and Non Relational DBMS.
 
-### Relational DBMS
+### Relational DBMS  
 
   - An RDBMS, or Relational Database Management System, is a type of database management system (DBMS) that stores data in a structured format, using rows and columns.
     - Example Databases : Oracle, MySQL, SQL Server
