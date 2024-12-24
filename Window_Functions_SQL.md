@@ -1,5 +1,5 @@
 
-#Key Window Functions
+# Key Window Functions
 - ROW_NUMBER()
 - RANK()
 - DENSE_RANK()
@@ -15,8 +15,6 @@ Purpose: Assigns a unique, sequential number to each row in the result set or pa
 
 Example:
 
-sql
-Copy code
 SELECT employee_id, department_id, salary,
        ROW_NUMBER() OVER (PARTITION BY department_id ORDER BY salary DESC) AS row_number
 FROM employees;
@@ -25,18 +23,16 @@ Explanation:
 Numbers rows within each department_id partition, ordered by salary DESC.
 Output:
 
-employee_id	department_id	salary	row_number
-1	101	100000	1
-2	101	90000	2
-3	102	120000	1
+employee_id	department_id	       salary	         row_number
+1	       101	              100000	            1
+2	       101	              90000	            2
+3	       102	              120000             1
 
 ## 2. RANK()
 Purpose: Assigns a rank to each row within a partition. Ties receive the same rank, but gaps appear in ranking for tied values.
 
 Example:
 
-sql
-Copy code
 SELECT employee_id, department_id, salary,
        RANK() OVER (PARTITION BY department_id ORDER BY salary DESC) AS rank
 FROM employees;
@@ -46,11 +42,11 @@ Employees with the same salary receive the same rank.
 Gaps exist in ranks after ties.
 Output:
 
-employee_id	department_id	salary	rank
-1	101	100000	1
-2	101	90000	2
-3	101	90000	2
-4	101	80000	4
+employee_id	department_id	           salary	      rank
+1	         101	                  100000	        1
+2	         101	                  90000	        2
+3	         101	                  90000	        2
+4	         101	                  80000	        4
 
 ## 3. DENSE_RANK()
 Purpose: Similar to RANK(), but without gaps in ranks for tied values.
@@ -70,7 +66,7 @@ employee_id	department_id	salary	dense_rank
 3	101	90000	2
 4	101	80000	3
 
-##4. NTILE(n)
+## 4. NTILE(n)
 Purpose: Divides rows into n roughly equal-sized groups and assigns a bucket number to each row.
 
 Example:
@@ -161,7 +157,7 @@ employee_id	salary	highest_salary
 2	90000	100000
 3	80000	100000
 
-##9. LAST_VALUE()
+## 9. LAST_VALUE()
 Purpose: Retrieves the last value in the window.
 
 Example:
@@ -181,14 +177,4 @@ employee_id	salary	lowest_salary
 2	90000	80000
 3	80000	80000
 
-## Summary Table
-Function	Purpose	Use Case Example
-ROW_NUMBER()	Assigns a unique number to each row.	Pagination, deduplication.
-RANK()	Ranks rows with gaps for ties.	Competition ranking (e.g., sports scores).
-DENSE_RANK()	Ranks rows without gaps for ties.	Sequential ranking without gaps.
-NTILE()	Divides rows into equal buckets.	Distributing data into groups (e.g., quartiles).
-SUM()	Calculates running totals.	Sales analysis, cumulative data.
-LAG()	Retrieves value from the previous row.	Comparing current vs. previous values.
-LEAD()	Retrieves value from the next row.	Anticipating trends or future comparisons.
-FIRST_VALUE()	Retrieves the first value in the window.	Finding top values in groups.
-LAST_VALUE()	Retrieves the last value in the window.	Finding bottom values in groups.
+
